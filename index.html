@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <p>What Number is I am thinking Now?</p>
+    <p>****Number Between 1-10***</p>
+    <input type="text" id="num">
+    <button id="guess">Guess!</button>
+  
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    document.getElementById("guess").onclick=function(){
+
+      var number=document.getElementById("num").value;
+      var num2=Math.floor(Math.random()*10);
+
+      if(number==num2)
+      {
+        alert("Corret");
+      }
+      else
+      {
+        alert("Wrong Number is"+num2);
+      }
+
+
+
+
+
+
+
+    }
+    
+    
+    </script>
+    
+    
+
+</body>
+</html>
